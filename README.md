@@ -1,5 +1,8 @@
 # Vibe Security Docker
 
+[![Publish to GHCR](https://img.shields.io/badge/GHCR-vibe--security-blue?logo=github)](https://github.com/vibe-security/vibe-docker/pkgs/container/vibe-security)
+
+
 A prebuilt Docker image for running Vibe Security scans with zero local dependencies. Ideal for CI/CD and isolated environments.
 
 ## Features
@@ -9,7 +12,7 @@ A prebuilt Docker image for running Vibe Security scans with zero local dependen
 
 ## Usage
 ```sh
-docker run -v $(pwd):/app vibe-security/vibe-docker:latest
+docker run -v $(pwd):/app ghcr.io/vibe-security/vibe-docker:latest
 ```
 
 ## License
