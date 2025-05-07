@@ -36,7 +36,7 @@ RUN curl -LO https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2.
     rm ZAP_2.16.1_Linux.tar.gz
 
 # 8. Copy scripts
-COPY vibe-scan.sh generate-dashboard.js /usr/local/bin/
+COPY vibe-scan.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/vibe-scan.sh
 
 ENTRYPOINT ["vibe-scan.sh"]
