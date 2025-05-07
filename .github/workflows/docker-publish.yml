@@ -1,9 +1,8 @@
 name: Publish Docker image to GHCR
 
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
 
 jobs:
   build-and-push:
@@ -30,4 +29,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/vibe-security/vibe-docker:latest
+          tags: |
+            ghcr.io/vibe-security/vibe-docker:${{ github.event.release.tag_name }}
+            ghcr.io/vibe-security/vibe-docker:latest
