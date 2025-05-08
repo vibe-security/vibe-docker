@@ -6,6 +6,9 @@
 A prebuilt Docker image for running Vibe Security scans with zero local dependencies. Ideal for CI/CD and isolated environments.
 
 ## Features
+
+📚 **Full documentation:** [Vibe Security Suite Docs – Docker](https://github.com/vibe-security/vibe-security-suite/blob/main/docs-site/docs/docker.md)
+
 - All tools pre-installed (Semgrep, SQLMap, Trivy, etc.)
 - No need to install anything on your host
 - Consistent results across platforms
